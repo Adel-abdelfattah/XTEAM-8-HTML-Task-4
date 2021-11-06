@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #111010;
+}
+.container {
+    max-width: 1170px;
+}
+
+@media screen and (max-width: 576px)  {
+    .container {
+        min-width: 720px;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px)  {
+    .container {
+        min-width: 720px;
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px)  {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 1200px)  {
+    .container {
+        max-width: 720px;
+    }
+}
+
+main{
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 0 0 7px 1px gray;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 50px auto;
+}
+.left{
+    display: flex;
+    width: 65%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+    color: hsl(234deg 74% 20%);
+}
+.left .name, .presentation, .experience, .education {
+    margin-bottom: 10px;
+    border-bottom: solid;
+    padding-bottom: 5px;
+}
+.experience ul, .education ul{
+    padding-left: 10px;
+    list-style: square;
+}
+.experience ul li, .education ul li{
+    margin: 10px;
+}
+.right{
+    display: flex;
+    width: 35%;
+    background-color: hsl(234deg 74% 20%);
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+.right div{
+    width: 100%;
+    padding: 0 15px;
+}
+.left h3{
+    margin: 5px 0;
+}
+.right .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.right .img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.right h3{
+    margin: 10px auto;
+}
+.right ul{
+    list-style: none;
+}
+.right dl dd{
+    font-size: 15px;
+    margin-left: 15px;
+}
+.right dl dt{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.right ul li h5{
+    margin-left: 15px;
+}
+.progress{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+    margin-left: 0;
+}
+.progress-bar {
+    width: 20%;
+    height: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    background-color: #0d6efd;
+    margin: 10px 1px;
+}
