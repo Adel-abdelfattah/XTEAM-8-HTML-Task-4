@@ -68,8 +68,9 @@ main{
     padding-left: 10px;
     list-style: square;
 }
-.experience ul li, .education ul li{
+.experience ul li, .education ul li, .presentation p{
     margin: 10px;
+    color: #000;
 }
 .right{
     display: flex;
